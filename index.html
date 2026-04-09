@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estructuras de Datos - CS2031 Team</title>
+    
     <link rel="stylesheet" href="styles/page.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/nav.css" />
@@ -34,12 +35,15 @@
 
             <ul class="nav__list">
               <li class="nav__item">
-                  <a href="#hero" class="nav__link">Inicio</a>
+                <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
+                <a href="#hero" class="nav__link">Inicio</a>
               </li>
               <li class="nav__item">
+                <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
                 <a href="#about" class="nav__link">Acerca de</a>
               </li>
               <li class="nav__item">
+                <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
                 <a href="#team" class="nav__link">Equipo</a>
               </li>
             </ul>
@@ -122,15 +126,6 @@
             </div>
           </div>
         </section>
-
-        <section id="team" class="team">
-          <div class="team__container">
-            <div class="team__header">
-              <h2 class="team__title">Nuestro Equipo</h2>
-              <p class="team__description">
-                Las personas detrás de este proyecto
-              </p>
-            </div>
 
             <div class="team__grid">
               <!-- INTEGRANTE 1: Reemplaza con tus datos -->
